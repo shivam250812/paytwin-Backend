@@ -5,7 +5,14 @@ const rootRouter = require("./routes/index");
 const cors = require('cors')
 
 const app=express();
-app.use(cors())
+const corsOptions = {
+  origin: 'https://paytwin-frontend.vercel.app',
+  methods: 'GET, HEAD, PUT, PATCH, POST, DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204
+};
+
+app.use(cors(corsOptions));
 app.use(express.json())
 
 // app.use("/api/v1", mainRouter)
