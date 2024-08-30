@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 const { User } = require("../Database/db");
 const JWT_SECRET = require("../config");
 const userRouter = express.Router();
-const authMiddleware = require("/Users/adityadeshpande/Desktop/development/paytm-main/backend/routes/middleware.js");
+const authMiddleware = require("./middleware.js");
 const { Account } = require("../Database/db");
 
 const signUpSchema = zod.object({
