@@ -1,6 +1,6 @@
 const { default: mongoose } = require("mongoose");
 const { Schema } = mongoose;
-mongoose.connect("mongodb+srv://adityadeshpande2603:Aditya%4017419631@cluster0.bgaeeyz.mongodb.net/PaYTM");
+mongoose.connect("mongodb+srv://shivam122508:jogi%40123@cluster0.hvyzg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 
 const UserSchema = new Schema({
     name:String,
